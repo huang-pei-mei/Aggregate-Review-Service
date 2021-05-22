@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One|PT+Serif:400,400i,700,700i');
+
+div {
+  display: block;
+}
+.main-heading {
+  display: block;
+  margin:0px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 28px;;
+  font-weight: 700;
+  color: black;
+  font-family: "Audible Sans",Arial,sans-serif;
+}
+.rating-heading {
+ display: block;
+ margin:0px;
+ color: rgba(20,20,20,.65);
+ font-size: 16px;
+ line-height: 24px;;
+ font-weight: 400;
+ font-family: "Audible Sans",Arial,sans-serif;
+ margin-bottom: 35px;
+}
+.box {
+  float:left;
+  width:150px;
+  box-shadow:3px 3px 2px #666767;
+  height:30px;
+  background-color: orange;
+}
+body {
+  padding: 20px;
+  color: rgba(20,20,20,.65);
+  font-family: "Audible Sans",Arial,sans-serif;
+  font-size: 15px;
+  text-align: "center";
+  line-height: 20px;
+  margin: 5%;
+  line-height: 1.6;
+}
+.overallRating {
+  display: none;
+}
+.overall {
+  float:left;
+  width:25%;
+  height:280px;
+}
+.performance {
+  float:left;
+  width:25%;
+  height:280px;
+  margin-left: 30px;
+}
+.story {
+  float:left;
+  width:25%;
+  height:280px;
+  margin-left: 30px;
+}
+.review-star {
+  color: orange;
+  height: 24px;
+}
+.rating {
+  margin-bottom: 4px;
+  color: #141414;
+  background-color: #FFF;
+  font-family: "Audible Sans",Arial,sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.overallRating {
+  display: none;
+}
+
+progress {
+  /* RESETS */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+
+  width: 190px;
+  height: 7px;
+  border-radius: 10px;
+  background-color: rgb(230, 230, 230);
+  color: rgb(20, 240, 221);
+}
+
+/* WEBKIT BROWSERS - CHROME, OPERA AND SAFARI */
+progress::-webkit-progress-bar {
+  background-color: rgb(230, 230, 230);
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color:orange;
+  border-radius: 10px;
+}
+
+/* MOZILLA FIREFOX */
+progress::-moz-progress-bar {
+  background-color: orange;
+  border-radius: 10px;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+#wrapper {
+  display: block;
+  margin-left:90px;
+  margin-right:30px;
+  width:100%;
+  // position: fixed;
+}
+
+@media (max-width: 560px) {
+
+  div {
+    display: block;
+  }
+  .main-heading {
+    display: block;
+    margin-bottom:5px;
+    margin-left: -35px;
+    margin-right: 55px;
+    width: 110%;
+    font-weight: bolder;
+    font-size: 24px;
+    color: black;
+    line-height: 36px;;
+    font-weight: 700;
+    font-family: "Audible Sans",Arial,sans-serif;
+  }
+  .overallRating {
+    display: block;
+    margin-bottom:8px;
+    margin-top: -5px;
+    margin-left: -5px;
+    font-weight: bolder;
+    font-size: 24px;
+    color: black;
+    line-height: 36px;;
+    font-weight: 600;
+    font-family: "Audible Sans",Arial,sans-serif;
+  }
+  .rating-heading {
+    display: none;
+  }
+
+  .averageReview {
+    margin-left: -55px;
+
+  }
+  .overall {
+    margin-left: -35px;
+    padding: 0px;
+    color: rgba(20,20,20,.65);
+    font-family: "Audible Sans",Arial,sans-serif;
+    font-size: 15px;
+    text-align: "center";
+    line-height: 10px;
+    line-height: 1.8;
+    width: 110%;
+  }
+  body {
+    padding: 20px;
+    color: rgba(20,20,20,.65);
+    font-family: "Audible Sans",Arial,sans-serif;
+    font-size: 15px;
+    text-align: "center";
+    line-height: 20px;
+    margin: 5%;
+    line-height: 1.6;
+  }
+
+
+  .performance {
+    display: none;
+  }
+  .story {
+    display:none;
+  }
+  .review-star {
+    color: orange;
+    height: 24px;
+  }
+  .rating {
+    display: none;
+  }
+  progress {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+
+    width: 190px;
+    height: 7px;
+    border-radius: 10px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(20, 240, 221);
+  }
+
+  /* WEBKIT BROWSERS - CHROME, OPERA AND SAFARI */
+  progress::-webkit-progress-bar {
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+  }
+
+  progress::-webkit-progress-value {
+    background-color:orange;
+    border-radius: 10px;
+  }
+
+  /* MOZILLA FIREFOX */
+  progress::-moz-progress-bar {
+    background-color: orange;
+    border-radius: 10px;
+  }
+
+  html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+  #wrapper {
+    display: block;
+    margin-left:20px;
+    margin-right:30px;
+    width:100%;
+    // position: fixed;
+  }
+}
+
+
+
+
+
+
+
