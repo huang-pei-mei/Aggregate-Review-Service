@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Francois+One|PT+Serif:400,400i,700,700i');
 
-div {
-  display: block;
-}
+// div {
+//   display: block;
+// }
 .main-heading {
   display: block;
-  margin:0px;
+  margin-top: 125px;
+  margin-left:20px;
   margin-bottom: 5px;
   font-size: 18px;
   line-height: 28px;;
@@ -15,23 +16,23 @@ div {
 }
 .rating-heading {
  display: block;
- margin:0px;
+ margin-left:20px;
  color: rgba(20,20,20,.65);
  font-size: 16px;
  line-height: 24px;;
  font-weight: 400;
  font-family: "Audible Sans",Arial,sans-serif;
- margin-bottom: 35px;
+ margin-bottom: 10px;
 }
 .box {
   float:left;
-  width:150px;
+  width:100px;
   box-shadow:3px 3px 2px #666767;
   height:30px;
   background-color: orange;
 }
-body {
-  padding: 20px;
+table {
+  padding: 0px;
   color: rgba(20,20,20,.65);
   font-family: "Audible Sans",Arial,sans-serif;
   font-size: 15px;
@@ -52,13 +53,13 @@ body {
   float:left;
   width:25%;
   height:280px;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 .story {
   float:left;
   width:25%;
   height:280px;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 .review-star {
   color: orange;
@@ -118,6 +119,12 @@ html {
   width:100%;
   // position: fixed;
 }
+html {
+  display: block;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px !important;
+  -webkit-text-size-adjust: 100%;
+}
 
 @media (max-width: 560px) {
 
@@ -127,7 +134,7 @@ html {
   .main-heading {
     display: block;
     margin-bottom:5px;
-    margin-left: -35px;
+    margin-left: -20px;
     margin-right: 55px;
     width: 110%;
     font-weight: bolder;
@@ -168,16 +175,16 @@ html {
     line-height: 1.8;
     width: 110%;
   }
-  body {
-    padding: 20px;
-    color: rgba(20,20,20,.65);
-    font-family: "Audible Sans",Arial,sans-serif;
-    font-size: 15px;
-    text-align: "center";
-    line-height: 20px;
-    margin: 5%;
-    line-height: 1.6;
-  }
+  // body {
+  //   padding: 20px;
+  //   color: rgba(20,20,20,.65);
+  //   font-family: "Audible Sans",Arial,sans-serif;
+  //   font-size: 15px;
+  //   text-align: "center";
+  //   line-height: 20px;
+  //   margin: 5%;
+  //   line-height: 1.6;
+  // }
 
 
   .performance {
@@ -199,7 +206,7 @@ html {
     appearance: none;
     border: none;
 
-    width: 190px;
+    width: 180px;
     height: 7px;
     border-radius: 10px;
     background-color: rgb(230, 230, 230);
