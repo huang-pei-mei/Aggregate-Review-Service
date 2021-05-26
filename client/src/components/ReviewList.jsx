@@ -45,14 +45,14 @@ What listeners say about this book
     <div className="rating-heading">
       Average Customer Ratings
     </div>
-
+<div id="threetables">
 <div className="overall">
 <table>
 
 <tr className="rating">Overall</tr>
 <div className="overallRating">Overall Ratings</div>
 <div className="averagereview">
-{/* <span class="review-star"> {stars[getStars(props.review.overall.average)]}</span> */}
+
 <StarRatings rating={getStars(props.review.overall.average)} starRatedColor='#FFA000' starDimension='24px' starSpacing='3px' starEmptyColor='rgb(230, 230, 230)'/>
 <span>{props.review.overall.average} Out of 5</span>
 </div>
@@ -115,6 +115,7 @@ What listeners say about this book
 <progress id="bar" value="5" max="100"> 80% </progress>&nbsp;{props.review.story.oneStars}</tr>
 
 </table>
+</div>
 </div>
 </div>
 )
