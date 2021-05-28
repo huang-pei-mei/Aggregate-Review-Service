@@ -8,15 +8,15 @@ module.exports = {
   // devServer: {
   //   contentBase: './client/dist',
   // },
-  mode: 'development',
+  mode: 'production',
   devtool: 'source-map',
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        //use: ['babel-loader']
-        loader: 'babel-loader'
+        use: 'babel-loader'
+        // loader: 'babel-loader'
       },
       {
         test: /\.css$/,
