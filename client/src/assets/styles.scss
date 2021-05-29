@@ -45,22 +45,34 @@ table {
 .overallRating {
   display: none;
 }
-.overall {
-  float:left;
-  width:25%;
-  height:280px;
+ul {
+  list-style-type: none;
 }
-.performance {
+.table1{
+  margin-left: -5px;
   float:left;
   width:25%;
   height:280px;
-  margin-left: 11px;
+  padding: 0px 0px 0px 0px;
+  line-height: 25px;
 }
-.story {
+ .table2{
+  right: 10px;
   float:left;
   width:25%;
   height:280px;
-  margin-left: 10px;
+  margin-left: 5px;
+  padding: 0px 0px 0px 0px;
+  line-height: 25px;
+}
+.table3{
+  right: 10px;
+  float:left;
+  width:25%;
+  height:280px;
+  margin-left: 5px;
+  padding: 0px 0px 0px 0px;
+  line-height: 25px;
 }
 .review-star {
   color: orange;
@@ -74,6 +86,16 @@ table {
   font-size: 14px;
   line-height: 20px;
 }
+.storyrating {
+  margin-top: -20px;
+  float:left;
+  width:25%;
+}
+.performancerating {
+  margin-top: -20px;
+  float:left;
+  width:25%;
+}
 .overallRating {
   display: none;
 }
@@ -84,7 +106,7 @@ progress {
   appearance: none;
   border: none;
 
-  width: 180px;
+  width: 200px;
   height: 7px;
   border-radius: 10px;
   background-color: rgb(230, 230, 230);
@@ -115,6 +137,8 @@ progress#bar {
   margin-left:90px;
   margin-right:30px;
   width:100%;
+  min-height: 100px;
+  text-overflow: ellipsis;
 }
 html {
   display: block;
@@ -123,12 +147,12 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 960px) {
 
   .main-heading {
     display: block;
     margin-bottom:5px;
-    margin-left: -11px;
+    margin-left: -8px;
     margin-right: 55px;
     width: 110%;
     font-weight: bolder;
@@ -142,7 +166,7 @@ html {
     display: block;
     margin-bottom:8px;
     margin-top: 5px;
-    margin-left: 0px;
+    margin-left: -6px;
     font-weight: bolder;
     font-size: 24px;
     color: black;
@@ -158,7 +182,7 @@ html {
     margin-left: -55px;
 
   }
-  .overall {
+  .table1{
     margin-left: -8px;
     padding: 0px;
     color: rgba(20,20,20,.65);
@@ -169,12 +193,17 @@ html {
     line-height: 1.8;
     width: 110%;
   }
+ .table2 {
+   display: none;
+ }
+.table3 {
+  display: none;
+}
 
-
-  .performance {
+  .performancerating {
     display: none;
   }
-  .story {
+  .storyrating {
     display:none;
   }
   .review-star {
@@ -190,7 +219,7 @@ html {
     appearance: none;
     border: none;
 
-    width: 180px;
+    width: 220px;
     height: 7px;
     border-radius: 10px;
     background-color: rgb(230, 230, 230);

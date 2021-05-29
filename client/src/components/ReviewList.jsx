@@ -45,79 +45,139 @@ What listeners say about this book
     <div className="rating-heading">
       Average Customer Ratings
     </div>
-<div id="threetables">
-<div className="overall">
-<table>
 
-<tr className="rating">Overall</tr>
-<div className="overallRating">Overall Ratings</div>
-<div className="averagereview">
 
+   <div className="rating">Overall</div>
+  <div className="overallRating">Overall Ratings</div>
+
+<span>
+ 	<ul className="table1">
+<li className="averagereview">
 <StarRatings rating={getStars(props.review.overall.average)} starRatedColor='#FFA000' starDimension='24px' starSpacing='3px' starEmptyColor='rgb(230, 230, 230)'/>
 <span>{props.review.overall.average} Out of 5</span>
-</div>
+</li>
 
-<div id="overall">
-<tr > 5 Stars &nbsp;
-{<progress id="bar" value="80" max="100"> 80% </progress>}&nbsp;{props.review.overall.fiveStars}</tr>
-</div>
- <tr > 4 Stars &nbsp;
-<progress id="bar" value="30" max="100"> 80% </progress>&nbsp;{props.review.overall.fourStars}</tr>
- <tr > 3 Stars &nbsp;
-<progress id="bar" value="20" max="100"> 80% </progress>&nbsp;{props.review.overall.threeStars}</tr>
- <tr > 2 Stars &nbsp;
-<progress id="bar" value="10" max="100"> 80% </progress>&nbsp;{props.review.overall.twoStars}</tr>
- <tr > 1 Stars &nbsp;
-<progress id="bar" value="5" max="100"> 80% </progress>&nbsp;{props.review.overall.oneStars}</tr>
+<li id="overall">
+<span>5 Stars</span>
+{<progress id="bar" value="80" max="100"> 80% </progress>}
+<span>{props.review.overall.fiveStars}</span>
+</li>
 
-</table>
- </div>
+<li id="overall">
+<span>4 Stars</span>
+<progress id="bar" value="30" max="100"> 80% </progress>
+<span>{props.review.overall.fourStars}</span>
+</li>
 
-<div className="performance">
-<table>
+<li id="overall">
+<span>3 Stars</span>
+<progress id="bar" value="20" max="100"> 80% </progress>
+<span>{props.review.overall.threeStars}</span>
+</li>
 
-<tr className="rating">Performance</tr>
-{/* <span class="review-star"> {stars[getStars(props.review.performance.average)]}</span> */}
+<li id="overall">
+<span>2 Stars</span>
+<progress id="bar" value="10" max="100"> 80% </progress>
+<span>{props.review.overall.twoStars}</span>
+</li>
+
+<li id="overall">
+<span>1 Stars</span>
+<progress id="bar" value="5" max="100"> 80% </progress>
+<span>{props.review.overall.oneStars}</span>
+</li>
+
+</ul>
+</span>
+
+
+<div className="performancerating">Performance</div>
+
+
+<span>
+ 	<ul className="table2">
+<li className="averagereview">
 <StarRatings rating={getStars(props.review.performance.average)} starRatedColor='#FFA000' starDimension='24px' starSpacing='3px' starEmptyColor='rgb(230, 230, 230)'/>
 <span>{props.review.performance.average} Out of 5</span>
+</li>
 
-<tr > 5 Stars &nbsp;
-<progress id="bar" value="80" max="100"> 80% </progress>&nbsp;{props.review.performance.fiveStars}</tr>
- <tr > 4 Stars &nbsp;
-<progress id="bar" value="30" max="100"> 80% </progress>&nbsp;{props.review.performance.fourStars}</tr>
- <tr > 3 Stars &nbsp;
-<progress id="bar" value="20" max="100"> 80% </progress>&nbsp;{props.review.performance.threeStars}</tr>
- <tr > 2 Stars &nbsp;
-<progress id="bar" value="10" max="100"> 80% </progress>&nbsp;{props.review.performance.twoStars}</tr>
- <tr > 1 Stars &nbsp;
-<progress id="bar" value="5" max="100"> 80% </progress>&nbsp;{props.review.performance.oneStars}</tr>
+<li id="performance">
+<span>5 Stars</span>
+{<progress id="bar" value="80" max="100"> 80% </progress>}
+<span>{props.review.performance.fiveStars}</span>
+</li>
 
-</table>
-</div>
+<li id="performance">
+<span>4 Stars</span>
+<progress id="bar" value="30" max="100"> 80% </progress>
+<span>{props.review.performance.fourStars}</span>
+</li>
 
-<div className="story">
-<table>
+<li id="performance">
+<span>3 Stars</span>
+<progress id="bar" value="20" max="100"> 80% </progress>
+<span>{props.review.performance.threeStars}</span>
+</li>
 
-<tr className="rating">Story</tr>
-{/* <span class="review-star"> {stars[getStars(props.review.story.average)]}</span> */}
+<li id="performance">
+<span>2 Stars</span>
+<progress id="bar" value="10" max="100"> 80% </progress>
+<span>{props.review.performance.twoStars}</span>
+</li>
+
+<li id="performance">
+<span>1 Stars</span>
+<progress id="bar" value="5" max="100"> 80% </progress>
+<span>{props.review.performance.oneStars}</span>
+</li>
+
+</ul>
+</span>
+
+<div className="storyrating">Story</div>
+
+
+<span>
+ 	<ul className="table3">
+<li className="averagereview">
 <StarRatings rating={getStars(props.review.story.average)} starRatedColor='#FFA000' starDimension='24px' starSpacing='3px' starEmptyColor='rgb(230, 230, 230)' starBorders='#FFA000'/>
 <span>{props.review.story.average} Out of 5</span>
+</li>
 
-<tr > 5 Stars &nbsp;
-<progress id="bar" value="80" max="100"> 80% </progress>&nbsp;{props.review.story.fiveStars}</tr>
- <tr > 4 Stars &nbsp;
-<progress id="bar" value="30" max="100"> 80% </progress>&nbsp;{props.review.story.fourStars}</tr>
- <tr > 3 Stars &nbsp;
-<progress id="bar" value="20" max="100"> 80% </progress>&nbsp;{props.review.story.threeStars}</tr>
- <tr > 2 Stars &nbsp;
-<progress id="bar" value="10" max="100"> 80% </progress>&nbsp;{props.review.story.twoStars}</tr>
- <tr > 1 Stars &nbsp;
-<progress id="bar" value="5" max="100"> 80% </progress>&nbsp;{props.review.story.oneStars}</tr>
+<li id="story">
+<span>5 Stars</span>
+{<progress id="bar" value="80" max="100"> 80% </progress>}
+<span>{props.review.story.fiveStars}</span>
+</li>
 
-</table>
+<li id="story">
+<span>4 Stars</span>
+<progress id="bar" value="30" max="100"> 80% </progress>
+<span>{props.review.story.fourStars}</span>
+</li>
+
+<li id="story">
+<span>3 Stars</span>
+<progress id="bar" value="20" max="100"> 80% </progress>
+<span>{props.review.story.threeStars}</span>
+</li>
+
+<li id="story">
+<span>2 Stars</span>
+<progress id="bar" value="10" max="100"> 80% </progress>
+<span>{props.review.story.twoStars}</span>
+</li>
+
+<li id="story">
+<span>1 Stars</span>
+<progress id="bar" value="5" max="100"> 80% </progress>
+<span>{props.review.story.oneStars}</span>
+</li>
+
+</ul>
+</span>
 </div>
-</div>
-</div>
+
 )
 
 };
