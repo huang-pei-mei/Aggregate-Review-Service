@@ -55,6 +55,7 @@ ul {
   height:280px;
   padding: 0px 0px 0px 0px;
   line-height: 25px;
+  color: rgba(20,20,20,.65);
 }
  .table2{
   right: 10px;
@@ -64,6 +65,7 @@ ul {
   margin-left: 5px;
   padding: 0px 0px 0px 0px;
   line-height: 25px;
+  color: rgba(20,20,20,.65);
 }
 .table3{
   right: 10px;
@@ -73,6 +75,7 @@ ul {
   margin-left: 5px;
   padding: 0px 0px 0px 0px;
   line-height: 25px;
+  color: rgba(20,20,20,.65);
 }
 .review-star {
   color: orange;
@@ -90,11 +93,13 @@ ul {
   margin-top: -20px;
   float:left;
   width:25%;
+  color: rgba(20,20,20,.65);
 }
 .performancerating {
   margin-top: -20px;
   float:left;
   width:25%;
+  color: rgba(20,20,20,.65);
 }
 .overallRating {
   display: none;
@@ -191,7 +196,8 @@ html {
     text-align: "center";
     line-height: 10px;
     line-height: 1.8;
-    width: 110%;
+    width: 100%;
+    color: rgba(20,20,20,.65);
   }
  .table2 {
    display: none;
