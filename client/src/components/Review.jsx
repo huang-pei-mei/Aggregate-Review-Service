@@ -4,7 +4,7 @@ import ReviewList from './ReviewList.jsx';
 
 const Review = (props) => (
 
-<div className="review-list">
+<div>
 
 {
    props.reviews.map((review, index)=>{

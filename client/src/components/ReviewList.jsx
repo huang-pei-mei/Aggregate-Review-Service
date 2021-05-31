@@ -37,7 +37,7 @@ const ReviewList = (props) => {
   return (
 
 
-<div id="wrapper">
+<div>
 <div className="main-heading">
 What listeners say about this book
     </div>
@@ -46,7 +46,7 @@ What listeners say about this book
       Average Customer Ratings
     </div>
 
-
+<div className="threeTables">
    <div className="rating">Overall</div>
   <div className="overallRating">Overall Ratings</div>
 
@@ -176,6 +176,7 @@ What listeners say about this book
 
 </ul>
 </span>
+</div>
 </div>
 
 )

@@ -6,7 +6,7 @@ div {
 .main-heading {
   display: block;
   margin-top: 125px;
-  // margin-left:20px;
+  margin-left:1px;
   margin-bottom: 5px;
   font-size: 18px;
   line-height: 28px;;
@@ -16,7 +16,7 @@ div {
 }
 .rating-heading {
  display: block;
-//  margin-left:20px;
+ margin-left:1px;
  color: rgba(20,20,20,.65);
  font-size: 16px;
  line-height: 24px;;
@@ -31,17 +31,17 @@ div {
   height:30px;
   background-color: orange;
 }
-table {
-  padding: 0px;
-  color: rgba(20,20,20,.65);
-  font-family: "Audible Sans",Arial,sans-serif;
-  font-size: 15px;
-  text-align: "center";
-  line-height: 20px;
-  margin-left: -5px;
-  line-height: 1.6;
-  width: 100%;
-}
+// table {
+//   padding: 0px;
+//   color: rgba(20,20,20,.65);
+//   font-family: "Audible Sans",Arial,sans-serif;
+//   font-size: 15px;
+//   text-align: "center";
+//   line-height: 20px;
+//   margin-left: -5px;
+//   line-height: 1.6;
+//   width: 100%;
+// }
 .overallRating {
   display: none;
 }
@@ -49,40 +49,44 @@ ul {
   list-style-type: none;
 }
 .table1{
-  margin-left: -5px;
+  margin-left: 5px;
   float:left;
   width:25%;
   height:280px;
   padding: 0px 0px 0px 0px;
   line-height: 25px;
   color: rgba(20,20,20,.65);
+  // resize: both;
+  // overflow: auto;
 }
  .table2{
-  right: 10px;
+  // left: -20px;
   float:left;
   width:25%;
   height:280px;
-  margin-left: 5px;
+  margin-left: -290px;
   padding: 0px 0px 0px 0px;
   line-height: 25px;
   color: rgba(20,20,20,.65);
 }
 .table3{
-  right: 10px;
+  right: 20px;
   float:left;
   width:25%;
   height:280px;
-  margin-left: 5px;
+  margin-left: 25px;
   padding: 0px 0px 0px 0px;
   line-height: 25px;
   color: rgba(20,20,20,.65);
 }
+
 .review-star {
   color: orange;
   height: 24px;
 }
 .rating {
   margin-bottom: 4px;
+  margin-left: 10px;
   color: #141414;
   background-color: #FFF;
   font-family: "Audible Sans",Arial,sans-serif;
@@ -91,12 +95,14 @@ ul {
 }
 .storyrating {
   margin-top: -20px;
+  margin-left: 30px;
   float:left;
   width:25%;
   color: rgba(20,20,20,.65);
 }
 .performancerating {
   margin-top: -20px;
+  margin-left: 30px;
   float:left;
   width:25%;
   color: rgba(20,20,20,.65);
@@ -137,14 +143,23 @@ progress#bar {
   -webkit-table-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-#wrapper {
-  display: block;
-  margin-left:90px;
-  margin-right:30px;
-  width:100%;
-  min-height: 100px;
-  text-overflow: ellipsis;
+
+.threeTables {
+  // position: relative;
+  // margin: auto;
+  // margin-left:250px;
+  // margin-right:30px;
+  // width:100%;
+  // min-height: 100px;
+  // text-overflow: ellipsis;
+  // resize: both;
+  // overflow: auto;
+width: 1200px;
+position: relative;
+margin-left: 1px;
+line-height: 1.4em;
 }
+
 html {
   display: block;
   margin: 0px 0px 0px 0px !important;
@@ -157,7 +172,7 @@ html {
   .main-heading {
     display: block;
     margin-bottom:5px;
-    margin-left: -8px;
+    margin-left: -2px;
     margin-right: 55px;
     width: 110%;
     font-weight: bolder;
@@ -171,7 +186,7 @@ html {
     display: block;
     margin-bottom:8px;
     margin-top: 5px;
-    margin-left: -6px;
+    margin-left: -10px;
     font-weight: bolder;
     font-size: 24px;
     color: black;
@@ -251,9 +266,9 @@ html {
     font-size: 16px;
     -webkit-text-size-adjust: 100%;
   }
-  #wrapper {
+  .threeTables  {
     display: block;
-    margin-left:20px;
+    margin-left:8px;
     margin-right:30px;
     width:100%;
   }
