@@ -1,11 +1,20 @@
 const express = require('express');
+const expressStaticGzip = require('express-static-gzip');
 const bodyParser = require('body-parser');
 const db = require('../database/index.js');
-const cors = require('cors');
+
 
 let app = express();
-app.use(cors());
 
+
+app.use('/', expressStaticGzip(__dirname + '/../public', {
+  enableBrotli: true,
+  customCompressions: [{
+      encodingName: 'deflate',
+      fileExtension: 'zz'
+  }],
+  orderPreference: ['br']
+}));
 
 app.use(express.static(__dirname + '/../public'));
 app.use(bodyParser.json());
