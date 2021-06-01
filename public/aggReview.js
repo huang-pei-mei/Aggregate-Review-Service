@@ -74,9 +74,8 @@ var App = /*#__PURE__*/function (_React$Component) {
       var _this2 = this;
 
       var query = new URLSearchParams(location.search);
-      var bookId = query.get('bookId'); // 18.220.21.137
-
-      fetch("http://localhost:2880/api/aggReview/".concat(bookId)).then(function (response) {
+      var bookId = query.get('bookId');
+      fetch("http://18.220.21.137:2880/api/aggReview/".concat(bookId)).then(function (response) {
         return response.json();
       }).then(function (data) {
         return _this2.setState({
