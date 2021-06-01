@@ -1,7 +1,5 @@
-// import React from 'react';
 import React,  {lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom';
-// import Review from './Review.jsx';
 const Review = lazy(() => import('./Review.jsx'));
 const renderLoader = () => <p>Loading</p>;
 
@@ -21,7 +19,7 @@ class App extends React.Component {
   const query = new URLSearchParams(location.search);
   const bookId = query.get('bookId');
   // 18.220.21.137
-  fetch(`http://18.220.21.137:2880/api/aggReview/${bookId}`)
+  fetch(`http://localhost:2880/api/aggReview/${bookId}`)
     .then((response) => response.json())
     .then(data =>
       this.setState({reviews: data}))
@@ -34,7 +32,7 @@ class App extends React.Component {
     if(this.state.reviews.length <= 0){
       return (
         <div style={{color: "blue", padding: "25px",
-        fontFamily: "Arial", textalign:"center"}}>The Book you requested is not available. Please try another time!</div>
+        fontFamily: "Arial", textalign:"center"}}>The Book you requested is not available. Please try again</div>
       )
     } else {
       return (
