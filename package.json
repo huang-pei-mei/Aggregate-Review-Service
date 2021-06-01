@@ -9,6 +9,8 @@
   },
   "scripts": {
     "react-dev": "webpack --mode development --watch",
+    "react-prod": "webpack --mode production",
+    "seed": "node database/seed.js",
     "server-dev": "nodemon server/index.js",
     "start": "node server/index.js",
     "sass-dev": "sass --watch client/assets/styles.scss public/styles.css",
@@ -31,7 +33,6 @@
     "css": "^3.0.0",
     "css-loader": "^5.2.5",
     "express": "^4.17.1",
-    "express-static-gzip": "^2.1.1",
     "loader": "^2.1.1",
     "mongoose": "^5.12.9",
     "react": "^16.14.0",

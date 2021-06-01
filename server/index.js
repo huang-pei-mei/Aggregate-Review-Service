@@ -1,12 +1,10 @@
+var compression = require('compression');
 const express = require('express');
-var compression = require('compression')
 const bodyParser = require('body-parser');
 const db = require('../database/index.js');
 
 let app = express();
-app.use(express.compress({
-  threshold : 0
-}))
+app.use(compression({threshold : 0 }))
 
 app.use(express.static(__dirname + '/../public'));
 app.use(bodyParser.json());
