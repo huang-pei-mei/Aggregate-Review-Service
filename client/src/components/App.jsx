@@ -18,8 +18,8 @@ class App extends React.Component {
   getReview(){
   const query = new URLSearchParams(location.search);
   const bookId = query.get('bookId');
-  // 18.220.21.137
-  fetch(`http://localhost:2880/api/aggReview/${bookId}`)
+
+  fetch(`http://18.220.21.137:2880/api/aggReview/${bookId}`)
     .then((response) => response.json())
     .then(data =>
       this.setState({reviews: data}))
