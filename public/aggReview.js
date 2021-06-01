@@ -36,9 +36,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-// import React from 'react';
 
- // import Review from './Review.jsx';
 
 var Review = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.lazy)(function () {
   return Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_react-star-ratings_build_index_js"), __webpack_require__.e("client_src_components_Review_jsx")]).then(__webpack_require__.bind(__webpack_require__, /*! ./Review.jsx */ "./client/src/components/Review.jsx"));
@@ -78,7 +76,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       var query = new URLSearchParams(location.search);
       var bookId = query.get('bookId'); // 18.220.21.137
 
-      fetch("http://18.220.21.137:2880/api/aggReview/".concat(bookId)).then(function (response) {
+      fetch("http://localhost:2880/api/aggReview/".concat(bookId)).then(function (response) {
         return response.json();
       }).then(function (data) {
         return _this2.setState({
@@ -99,7 +97,7 @@ var App = /*#__PURE__*/function (_React$Component) {
             fontFamily: "Arial",
             textalign: "center"
           }
-        }, "The Book you requested is not available. Please try another time!");
+        }, "The Book you requested is not available. Please try again");
       } else {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Suspense, {
           fallback: renderLoader()
