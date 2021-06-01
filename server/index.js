@@ -16,7 +16,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/api/aggReview/:bookId', (req, res, next) => {
   res.set({'Access-Control-Allow-Origin': '*'})
  db.AggReview.find({'id': req.params.bookId}).exec((err, result) =>  {
-  console.log(result)
   if (err) {
     next(err);
   } else {
@@ -29,7 +28,6 @@ app.get('/api/reviews/:bookIds', (req, res, next) => {
   res.set({'Access-Control-Allow-Origin': '*'})
   const ids = req.params.bookIds.split(',');
  db.AggReview.find({ 'id': { $in: ids }}).exec((err, result) =>  {
-  console.log(result)
   if (err) {
     next(err);
   } else {
