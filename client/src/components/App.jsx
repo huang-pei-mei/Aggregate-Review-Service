@@ -1,7 +1,6 @@
-import React,  {lazy, Suspense } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-const Review = lazy(() => import('./Review.jsx'));
-const renderLoader = () => <p>Loading</p>;
+import Review from './Review.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -18,8 +17,8 @@ class App extends React.Component {
   getReview(){
   const query = new URLSearchParams(location.search);
   const bookId = query.get('bookId');
-
-  fetch(`http://18.220.21.137:2880/api/aggReview/${bookId}`)
+  // 18.220.21.137
+  fetch(`http://localhost:2880/api/aggReview/${bookId}`)
     .then((response) => response.json())
     .then(data =>
       this.setState({reviews: data}))
@@ -36,11 +35,9 @@ class App extends React.Component {
       )
     } else {
       return (
-        <Suspense fallback={renderLoader()}>
         <div>
           <Review reviews={this.state.reviews} />
         </div>
-        </Suspense>
        );
     }
 
