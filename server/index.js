@@ -1,4 +1,4 @@
-var compression = require('compression');
+const compression = require('compression');
 const express = require('express');
 const bodyParser = require('body-parser');
 const db = require('../database/index.js');
