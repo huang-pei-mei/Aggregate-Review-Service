@@ -54,37 +54,37 @@ What listeners say about this book
  	<ul className="table1">
 <li className="averagereview">
 <StarRatings rating={getStars(props.review.overall.average)} starRatedColor='#FFA000' starDimension='24px' starSpacing='3px' starEmptyColor='rgb(230, 230, 230)'/>
-<span>{props.review.overall.average} Out of 5</span>
+<span>&nbsp;&nbsp;{props.review.overall.average} Out of 5</span>
 </li>
 
 <li id="overall">
-<span>5 Stars</span>
+<span>5 Stars&nbsp;&nbsp;</span>
 {<progress id="bar" value="80" max="100"> 80% </progress>}
-<span>{props.review.overall.fiveStars}</span>
+<span>&nbsp;&nbsp;{props.review.overall.fiveStars}</span>
 </li>
 
 <li id="overall">
-<span>4 Stars</span>
+<span>4 Stars&nbsp;&nbsp;</span>
 <progress id="bar" value="30" max="100"> 80% </progress>
-<span>{props.review.overall.fourStars}</span>
+<span>&nbsp;&nbsp;{props.review.overall.fourStars}</span>
 </li>
 
 <li id="overall">
-<span>3 Stars</span>
+<span>3 Stars&nbsp;&nbsp;</span>
 <progress id="bar" value="20" max="100"> 80% </progress>
-<span>{props.review.overall.threeStars}</span>
+<span>&nbsp;&nbsp;{props.review.overall.threeStars}</span>
 </li>
 
 <li id="overall">
-<span>2 Stars</span>
+<span>2 Stars&nbsp;&nbsp;</span>
 <progress id="bar" value="10" max="100"> 80% </progress>
-<span>{props.review.overall.twoStars}</span>
+<span>&nbsp;&nbsp;{props.review.overall.twoStars}</span>
 </li>
 
 <li id="overall">
-<span>1 Stars</span>
+<span>1 Stars&nbsp;&nbsp;</span>
 <progress id="bar" value="5" max="100"> 80% </progress>
-<span>{props.review.overall.oneStars}</span>
+<span>&nbsp;&nbsp;{props.review.overall.oneStars}</span>
 </li>
 
 </ul>
@@ -98,37 +98,37 @@ What listeners say about this book
  	<ul className="table2">
 <li className="averagereview">
 <StarRatings rating={getStars(props.review.performance.average)} starRatedColor='#FFA000' starDimension='24px' starSpacing='3px' starEmptyColor='rgb(230, 230, 230)'/>
-<span>{props.review.performance.average} Out of 5</span>
+<span>&nbsp;&nbsp;{props.review.performance.average} Out of 5</span>
 </li>
 
 <li id="performance">
-<span>5 Stars</span>
+<span>5 Stars&nbsp;&nbsp;</span>
 {<progress id="bar" value="80" max="100"> 80% </progress>}
-<span>{props.review.performance.fiveStars}</span>
+<span>&nbsp;&nbsp;{props.review.performance.fiveStars}</span>
 </li>
 
 <li id="performance">
-<span>4 Stars</span>
+<span>4 Stars&nbsp;&nbsp;</span>
 <progress id="bar" value="30" max="100"> 80% </progress>
-<span>{props.review.performance.fourStars}</span>
+<span>&nbsp;&nbsp;{props.review.performance.fourStars}</span>
 </li>
 
 <li id="performance">
-<span>3 Stars</span>
+<span>3 Stars&nbsp;&nbsp;</span>
 <progress id="bar" value="20" max="100"> 80% </progress>
-<span>{props.review.performance.threeStars}</span>
+<span>&nbsp;&nbsp;{props.review.performance.threeStars}</span>
 </li>
 
 <li id="performance">
-<span>2 Stars</span>
+<span>2 Stars&nbsp;&nbsp;</span>
 <progress id="bar" value="10" max="100"> 80% </progress>
-<span>{props.review.performance.twoStars}</span>
+<span>&nbsp;&nbsp;{props.review.performance.twoStars}</span>
 </li>
 
 <li id="performance">
-<span>1 Stars</span>
+<span>1 Stars&nbsp;&nbsp;</span>
 <progress id="bar" value="5" max="100"> 80% </progress>
-<span>{props.review.performance.oneStars}</span>
+<span>&nbsp;&nbsp;{props.review.performance.oneStars}</span>
 </li>
 
 </ul>
@@ -141,37 +141,37 @@ What listeners say about this book
  	<ul className="table3">
 <li className="averagereview">
 <StarRatings rating={getStars(props.review.story.average)} starRatedColor='#FFA000' starDimension='24px' starSpacing='3px' starEmptyColor='rgb(230, 230, 230)' starBorders='#FFA000'/>
-<span>{props.review.story.average} Out of 5</span>
+<span>&nbsp;&nbsp;{props.review.story.average} Out of 5</span>
 </li>
 
 <li id="story">
-<span>5 Stars</span>
+<span>5 Stars&nbsp;&nbsp;</span>
 {<progress id="bar" value="80" max="100"> 80% </progress>}
-<span>{props.review.story.fiveStars}</span>
+<span>&nbsp;&nbsp;{props.review.story.fiveStars}</span>
 </li>
 
 <li id="story">
-<span>4 Stars</span>
+<span>4 Stars&nbsp;&nbsp;</span>
 <progress id="bar" value="30" max="100"> 80% </progress>
-<span>{props.review.story.fourStars}</span>
+<span>&nbsp;&nbsp;{props.review.story.fourStars}</span>
 </li>
 
 <li id="story">
-<span>3 Stars</span>
+<span>3 Stars&nbsp;&nbsp;</span>
 <progress id="bar" value="20" max="100"> 80% </progress>
-<span>{props.review.story.threeStars}</span>
+<span>&nbsp;&nbsp;{props.review.story.threeStars}</span>
 </li>
 
 <li id="story">
-<span>2 Stars</span>
+<span>2 Stars&nbsp;&nbsp;</span>
 <progress id="bar" value="10" max="100"> 80% </progress>
-<span>{props.review.story.twoStars}</span>
+<span>&nbsp;&nbsp;{props.review.story.twoStars}</span>
 </li>
 
 <li id="story">
-<span>1 Stars</span>
+<span>1 Stars&nbsp;&nbsp;</span>
 <progress id="bar" value="5" max="100"> 80% </progress>
-<span>{props.review.story.oneStars}</span>
+<span>&nbsp;&nbsp;{props.review.story.oneStars}</span>
 </li>
 
 </ul>
