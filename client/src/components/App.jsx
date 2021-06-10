@@ -6,12 +6,14 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      reviews: []
+      reviews: [],
+      currentBook: {}
     }
   };
 
   componentDidMount() {
     this.getReview();
+    this.getTitle();
   }
 
   getReview(){
@@ -25,6 +27,16 @@ class App extends React.Component {
       .catch(err => err)
     }
 
+    getTitle(){
+      const query = new URLSearchParams(location.search);
+      const bookId = query.get('bookId');
+      fetch(`http://13.57.14.144:2002/api/book/${bookId}`)
+        .then((response) => response.json())
+        .then(data =>
+          this.setState({currentBook: data}))
+          .catch(err => err)
+        }
+
 
 
   render() {
@@ -36,7 +48,7 @@ class App extends React.Component {
     } else {
       return (
         <div>
-          <Review reviews={this.state.reviews} />
+          <Review reviews={this.state.reviews} currentBook={this.state.currentBook}/>
         </div>
        );
     }

@@ -4,21 +4,18 @@ import ReviewList from './ReviewList.jsx';
 
 const Review = (props) => (
 
-<div className="review-list">
+  //const { reviews} = props;
 
-{
-   props.reviews.map((review, index)=>{
-   return (
-   < ReviewList review={review} key={index}/>
-   )
-  })
-}
-</div>
+  < div className="review-list" >
+    {
+      props.reviews.map((review, index) => {
+        return (
+          < ReviewList review={review} key={index} currentBook={props.currentBook}/>
+        )
+      })
+    }
+  </div >
 
-  );
+);
 
 export default Review;
-
-
-
-
