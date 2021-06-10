@@ -4,7 +4,6 @@ import ReviewList from './ReviewList.jsx';
 
 const Review = (props) => (
 
-  //const { reviews} = props;
 
   < div className="review-list" >
     {
