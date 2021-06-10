@@ -6,7 +6,6 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
   console.log("Connection Successful!");
 });
-
 let  aggreviewSchema = new mongoose.Schema({
   id: { type: Number, unique: true, index: true},
   overall: {
@@ -38,7 +37,6 @@ let  aggreviewSchema = new mongoose.Schema({
   }
 
 });
-
 let AggReview = mongoose.model('AggReview ', aggreviewSchema);
 AggReview.createIndexes();
 
