@@ -2,7 +2,7 @@ const { AggReview, mongoose } = require("./index.js");
 
 let save = (aggReviewData, callback) => {
   const query = { "id": aggReviewData.bookId };
-  const update = { $set: { "id": aggReviewData.bookId, "overall.total": aggReviewData.overall.total, "overall.average": aggReviewData.overall.average, "overall.fiveStars": aggReviewData.overall.fiveStars, "overall.fourStars": aggReviewData.overall.fourStars, "overall.threeStars": aggReviewData.overall.threeStars, "overall.twoStars": aggReviewData.overall.twoStars, "overall.oneStars": aggReviewData.overall.oneStars, "performance.total": aggReviewData.performance.total, "performance.average": aggReviewData.performance.average, "performance.fiveStars": aggReviewData.performance.fiveStars, "performance.fourStars": aggReviewData.performance.fourStars, "performance.threeStars": aggReviewData.performance.threeStars, "performance.twoStars": aggReviewData.performance.twoStars, "performance.oneStars": aggReviewData.performance.oneStars, "story.total": aggReviewData.story.total, "story.average": aggReviewData.story.average, "story.fiveStars": aggReviewData.story.fiveStars, "story.fourStars": aggReviewData.story.fourStars, "story.threeStars": aggReviewData.story.threeStars, "story.twoStars": aggReviewData.story.twoStars, "story.oneStars": aggReviewData.story.oneStars} };
+  const update = { $set: { "id": aggReviewData.bookId, "overall.total": aggReviewData.overall.total, "overall.average": aggReviewData.overall.average, "overall.fiveStars": aggReviewData.overall.fiveStars, "overall.fourStars": aggReviewData.overall.fourStars, "overall.threeStars": aggReviewData.overall.threeStars, "overall.twoStars": aggReviewData.overall.twoStars, "overall.oneStars": aggReviewData.overall.oneStars, "performance.total": aggReviewData.performance.total, "performance.average": aggReviewData.performance.average, "performance.fiveStars": aggReviewData.performance.fiveStars, "performance.fourStars": aggReviewData.performance.fourStars, "performance.threeStars": aggReviewData.performance.threeStars, "performance.twoStars": aggReviewData.performance.twoStars, "performance.oneStars": aggReviewData.performance.oneStars, "story.total": aggReviewData.story.total, "story.average": aggReviewData.story.average, "story.fiveStars": aggReviewData.story.fiveStars, "story.fourStars": aggReviewData.story.fourStars, "story.threeStars": aggReviewData.story.threeStars, "story.twoStars": aggReviewData.story.twoStars, "story.oneStars": aggReviewData.story.oneStars } };
   const options = { upsert: true };
   AggReview.updateOne(query, update, options, callback);
 };
@@ -18,7 +18,7 @@ for (let i = 0; i < 100; i++) {
     const twoStars = Math.floor(Math.random() * 400 + 50);
     const oneStars = Math.floor(Math.random() * 125 + 25);
     const total = oneStars + twoStars + threeStars + fourStars + fiveStars;
-    const average = ((5*fiveStars + 4*fourStars + 3*threeStars + 2*twoStars + 1*oneStars)/total).toFixed(1);
+    const average = ((5 * fiveStars + 4 * fourStars + 3 * threeStars + 2 * twoStars + 1 * oneStars) / total).toFixed(1);
 
     if (j === 0) {
       let overall = {

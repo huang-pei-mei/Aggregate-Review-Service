@@ -7,7 +7,7 @@ const Review = (props) => (
     {
       props.reviews.map((review, index) => {
         return (
-          < ReviewList review={review} key={index} currentBook={props.currentBook}/>
+          < ReviewList review={review} key={index} currentBook={props.currentBook} />
         )
       })
     }
